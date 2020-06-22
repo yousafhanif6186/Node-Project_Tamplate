@@ -2,8 +2,9 @@
   "name": "work-place",
   "version": "1.0.0",
   "description": "",
-  "main": "main-service",
+  "main": "lib/main-service",
   "scripts": {
+    "start": "NODE_PATH=${PWD}/.. node --expose-gc lib/main-service",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Muhammad Yousaf Hanif",
