@@ -1,5 +1,19 @@
 {
     "listener": {
         "port": 3040
+    },
+    "endpoints": {
+        "users": {
+            "basePath": "/api",
+            "controllers": [{
+                    "name": "collection",
+                    "path": "/users"
+                },
+                {
+                    "name": "instance",
+                    "path": "/users/user_id"
+                }
+            ]
+        }
     }
 }
