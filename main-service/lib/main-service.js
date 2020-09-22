@@ -1,11 +1,7 @@
-let StartService = require('./../../service-runner').StartService;
+const StartService = require('./../../service-runner').StartService;
+const configs = require('../configurations/conf.json');
 
 function init() {
-    let configs = {
-        listener:{
-            "port": 3040
-          }
-    }
     let service = new StartService(configs);
 }
 
